@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 1.2rem;
+  background-color: #23233b;
+}
+p{
+  line-height: 2.1rem;
+}
+a{
+  color: white;
+  font-family: inherit;
+  font-size: inherit;
+}
+header.header{
+  min-height: 100vh;
+}
+header .navigation{
+  display: flex;
+  justify-content: space-between;
+  min-height: 10vh;
+  border-bottom: 1px solid #2E344E;
+  padding: 0 15rem;
+  align-items: center;
+  background-color:#1D1D34;
+}
+header .navigation .logo {
+  padding: 5px 0;
+}
+header .nav-items{
+  display: flex;
+  align-items: center;
+}
+header .nav-item{
+  margin: 0 1rem;
+}
+header .burger-menu img{
+  display: none;
+  width: 40px;
+}
+header .small-title{
+  border-bottom: 2px solid #FE1A95;
+  display: inline-block;
+  padding-bottom: .4rem;
+  margin-bottom: 4rem;
+  font-weight: 500s;
+  font-size: 1.2rem;
+}
+header .header-title {
+  line-height: 6rem;
+  font-size: 4rem;
+}
+header .header-text {
+  margin: 22px 0;
+}
+header .name{
+  color: white;
+  opacity: 0.7;
+  margin-bottom: 2rem;
+}
+header .btn{
+  padding: .8rem 1rem;
+  text-transform: uppercase;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  display: inline-block;
+  text-align: center;
+  border-radius: 6px;
+  font-weight: 500;
+}
+header .main-btn{
+  background-color: #FE1A95;
+}
+header .header-content{
+  min-height: 90vh;
+  width: 100%;
+  padding: 0 15rem;
+  display: grid;
+  display: -ms-grid;
+  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: 1fr 1fr;
+}
+header .left {
+  position: relative;
+  -ms-grid-column: 1;
+}
+header .left-content{
+  position: absolute;
+  left: 0;
+  top: 100px;
+  width: 100%;
+}
+header .right {
+  position: relative;
+  -ms-grid-column: 2;
+}
+header .right .right-cont{
+  position: absolute;
+  right: 0;
+  top: 100px;
+  width: 90%;
+}
