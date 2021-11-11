@@ -29,11 +29,26 @@
         <li class="nav-item">
             <a href="#">Theme</a>
         </li>
+        <li class="nav-item">
+          <a href="#">Contact</a>
+      </li>
       </ul>
-      <div class="burger-menu">
-        <img src="./images/burger.png" alt="모바일 버튼 이미지">
-      </div>
     </nav>
+    <div class="burger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="overlay">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Trip</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Theme</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
     <div class="header-content">
       <div class="left">
         <div class="left-content">
@@ -235,15 +250,13 @@
       <div class="right">
         <div class="right-content">
           <div class="view-title">
-            <h2>Get personalized learning recommendations</h2>
+            <h2>평생 기억에 남을 추억 한가지</h2>
           </div>
           <p class="view-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Distinctio eius fugit veritatis tempore? Dicta ipsam vero corrupti adipisci 
-              cum nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            여행하지 않았다면 만나지 못할 인연들 평생 기억에 남고 추억 할 수 있는 장소를 소장하고 갖고 싶으신분 해외 여행에 무서움을 가지셨던 분들 혼자라서 여행하기 부담스러웠던 분들 모두 도전하세요.
           </p>
           <div class="btn-con">
-            <a href="#" class="btn main-btn">View All Courses</a>
+            <a href="#" class="btn main-btn">View More</a>
           </div>
         </div>
       </div>
@@ -339,5 +352,19 @@
   <footer class="footer">
     <p>©All Rights Reserved, DISCODE</p>
   </footer>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script>
+    $(function() {
+    $('.burger-menu').on('click', function(event){
+      event.preventDefault();
+      $(this).toggleClass('active');
+      $('.overlay').toggleClass('visible');
+
+      });
+    });   
+  </script>
 </body>
 </html>
